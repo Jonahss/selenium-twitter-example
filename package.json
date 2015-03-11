@@ -1,0 +1,14 @@
+{
+  "name": "selenium-twitter-example",
+  "version": "1.0.0",
+  "description": "Sample Selenium script that posts to twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jonahss",
+  "license": "ISC",
+  "dependencies": {
+    "webdriverio": "^2.4.5"
+  }
+}
