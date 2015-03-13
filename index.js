@@ -1,4 +1,5 @@
 var wd = require('webdriverio')
+var message = process.argv[2]
 
 var options = {
     desiredCapabilities: {
@@ -20,7 +21,7 @@ wd
     .setValue('.js-password-field:nth-child(1)', process.env.TWITTER_PASS)
     .click('.primary-btn')
     .waitForExist('#tweet-box-mini-home-profile')
-    .setValue('#tweet-box-mini-home-profile', 'posting to my twitter account programmatically using @saucelabs ')
+    .setValue('#tweet-box-mini-home-profile', message)
     .waitForEnabled('.js-tweet-btn', 3000)
     .click('.js-tweet-btn')
     .pause(2000)
